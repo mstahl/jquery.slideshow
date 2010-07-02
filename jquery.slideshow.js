@@ -17,11 +17,12 @@
       prev_btn.click(function () {
         current_slide = (current_slide + num_slides - 1) % num_slides;
         $(".slide.current", slideshow)
-        .fadeOut('fast')
+        .fadeOut('fast', function () {
+          $(".slide:eq(" + current_slide + ")", slideshow)
+          .fadeIn('slow')
+          .addClass("current");
+        })
         .removeClass("current");
-        $(".slide:eq(" + current_slide + ")", slideshow)
-        .fadeIn('slow')
-        .addClass("current");
       });
       var next_btn = $(".slideshow-control[rel='next']", this);
       // this.next_btn.slideshow = this;
