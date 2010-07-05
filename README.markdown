@@ -21,3 +21,6 @@ You can turn that into a slideshow with the following call:
 And that's it! You can style the next and previous buttons however you want as
 long as they're within the slideshow container and they're labeled with their
 "rel" attributes like how they are above.
+
+# Demo
+There is a [demo](http://mstahl.github.com/projects/jquery.slideshow/demo.html "jQuery slideshow demo") of this slideshow plugin on my github page.
