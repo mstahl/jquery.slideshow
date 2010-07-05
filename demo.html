@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>jquery.slideshow.demo</title>
+    <script src="http://code.jquery.com/jquery-1.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="jquery.slideshow.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+      $(function () {
+        $("#slideshow").slideshow();
+      });
+    </script>
+    <style type="text/css" media="screen">
+      body {
+        background-color: #666;
+        margin: 0;
+        padding: 0;
+        font-family: Helvetica,sans-serif;
+      }
+      #main-content {
+        width: 640px;
+        padding: 30px 80px;
+        border: #ccc;
+        background-color: #efefef;
+        margin: 30px auto;
+        -moz-border-radius: 20px;
+        -webkit-border-radius: 20px;
+      }
+      /* Slideshow Styles */
+      #slideshow {
+        position: relative;
+      }
+      #slideshow .slide {
+        display: none;
+      }
+      #slideshow img.current {
+        display: block;
+      }
+      #slideshow > .slideshow-control {
+        white-space: nowrap;
+        width: 64px;
+        height: 32px;
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+      }
+      #slideshow > .slideshow-control > .slideshow-control {
+        float: right;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main-content">
+      <h1>jQuery.slideshow demo</h1>
+      <p>Below is a demonstration of the jQuery.slideshow plugin in action, featuring Jinxii the Cat.</p>
+      <div id="slideshow" class="slideshow">
+        <img class="slide current" src="images/jinxii 1.jpg" width="640" height="425" alt="Jinxii 1" />
+        <img class="slide" src="images/jinxii 2.jpg" width="640" height="425" alt="Jinxii 2" />
+        <img class="slide" src="images/jinxii 3.jpg" width="640" height="425" alt="Jinxii 3" />
+        <img class="slide" src="images/jinxii 4.jpg" width="640" height="425" alt="Jinxii 4" />
+        <img class="slide" src="images/jinxii 5.jpg" width="640" height="425" alt="Jinxii 5" />
+        <img class="slide" src="images/jinxii 6.jpg" width="640" height="425" alt="Jinxii 6" />
+        <div class="slideshow-control">
+          <img class="slideshow-control" rel="prev" src="images/arrow-right.png" width="32" height="32" alt="&lt;" />
+          <img class="slideshow-control" rel="next" src="images/arrow-left.png" width="32" height="32" alt="&gt;" />
+        </div>
+      </div>
+      <p style="font-size: 10px; color: #ccc;">Photos &copy; 2009 Max Thom Stahl.</p>
+    </div>
+  </body>
+</html>
